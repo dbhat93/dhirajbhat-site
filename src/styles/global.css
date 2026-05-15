@@ -492,6 +492,18 @@ section:last-of-type {
   border-color: var(--link-underline);
 }
 
+.inline-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-underline);
+  padding-bottom: 1px;
+  transition: opacity 0.15s;
+}
+
+.inline-link:hover {
+  opacity: 0.7;
+}
+
 .person-nouri {
   color: var(--muted);
   border-bottom-color: transparent;
