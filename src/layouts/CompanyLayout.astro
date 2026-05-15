@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  company: string;
+  role: string;
+  years: string;
+  prev?: { slug: string; name: string };
+  next?: { slug: string; name: string };
+}
+
+const { company, role, years, prev, next } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{company} - Dhiraj Bhat</title>
+  </head>
+  <body>
+    <main class="company-page">
+
+      <nav class="company-nav">
+        <a href="/" class="back-link">Dhiraj Bhat</a>
+      </nav>
+
+      <header class="company-header">
+        <h1>{company}</h1>
+        <p class="company-role">{role}</p>
+        <p class="company-years">{years}</p>
+      </header>
+
+      <div class="company-prevnext">
+        {prev && <a href={`/company/${prev.slug}/`} class="prevnext-link">← {prev.name}</a>}
+        {next && <a href={`/company/${next.slug}/`} class="prevnext-link prevnext-right">Next: {next.name} →</a>}
+      </div>
+
+      <div class="company-content">
+        <slot />
+      </div>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+---
+import CompanyLayout from '../../layouts/CompanyLayout.astro';
+---
+<CompanyLayout
+  company="Unit21"
+  role="Senior Product Manager / GM, Fraud and Compliance"
+  years="2021 - 2026"
+  prev={{ slug: 'emergent', name: 'Emergent / Qenta' }}
+  next={{ slug: 'interface', name: 'Interface AI' }}
+>
+  <div class="story-card">
+    <h3>First PM on Fraud (2021 - 2023)</h3>
+    <p>Joined as the first product hire on fraud at a Series B fintech.
+    Owned the full fraud and compliance product surface from day one:
+    real-time rules, transaction monitoring, identity verification, case management,
+    and what would eventually become the fraud consortium.</p>
+    <p>Built the consortium from a blank doc to a 100+ financial institution network.
+    The privacy problem was real: how do you let banks share fraud signals without sharing
+    customer data? Co-invented the answer with a UC Berkeley cryptographer.
+    Patent US12118125B1. Granted October 2024.</p>
+    <p>Presented to the Federal Reserve, FinCEN, and California DFPI as Unit21's sole representative.
+    Argued in front of FinCEN about what "too many alerts" actually means.
+    The answer depends on whether you are in fraud or AML.
+    The full answer took twenty minutes.</p>
+  </div>
+
+  <div class="story-card">
+    <h3>GM, Fraud and Compliance (2023 - 2026)</h3>
+    <p>Shipped AI investigation agents to 65 customers. 35-65% handle time reduction.
+    Zero exits for legal, audit, or product reasons.</p>
+    <p>The surface concern when we deployed AI into fraud investigation was "it will take our jobs."
+    The real concerns were auditability, legal exposure, and explaining AI decisions to regulators.
+    I solved it in two places most PMs would not touch: at the architecture layer
+    (chose AWS Bedrock over direct API calls to eliminate the Data Processing Agreement requirement
+    that would have killed the pilot), and at the agreement layer
+    (reworked the consortium contract with our GC, from 60 pages to 4 with equivalent protection).</p>
+    <p>Gold Globee Award 2025: Product Management Professional of the Year.
+    Products That Count 2nd Annual Product Leader Award.</p>
+  </div>
+</CompanyLayout>
