@@ -356,8 +356,9 @@ section:last-of-type {
 }
 
 .back-link {
-  font-size: 0.8rem;
-  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
   text-decoration: none;
   border-bottom: 1px solid var(--border);
   padding-bottom: 1px;
