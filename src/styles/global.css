@@ -451,6 +451,47 @@ section:last-of-type {
   margin-bottom: 0;
 }
 
+/* ─── PEOPLE SECTION ─── */
+
+.people-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.people-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.people-sublabel {
+  margin-top: 1.25rem;
+}
+
+.people-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+}
+
+.person-link {
+  font-size: 0.875rem;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: border-color 0.15s;
+  white-space: nowrap;
+}
+
+.person-link:hover {
+  border-color: var(--link-underline);
+}
+
 /* ─── FOOTER ─── */
 
 footer {
