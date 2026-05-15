@@ -492,6 +492,12 @@ section:last-of-type {
   border-color: var(--link-underline);
 }
 
+.person-nouri {
+  color: var(--muted);
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
 /* ─── FOOTER ─── */
 
 footer {
