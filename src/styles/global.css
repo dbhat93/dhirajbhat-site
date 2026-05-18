@@ -293,6 +293,34 @@ section:last-of-type {
   opacity: 0.85;
 }
 
+/* ─── FROM CUSTOMERS ─── */
+
+.quotes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quote-item {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--link-underline);
+}
+
+.quote-item blockquote {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text);
+  font-style: italic;
+  margin: 0 0 0.4rem;
+}
+
+.quote-item figcaption {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
 /* ─── WRITING ─── */
 
 .writing-list {
