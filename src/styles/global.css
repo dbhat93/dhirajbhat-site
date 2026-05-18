@@ -543,10 +543,6 @@ section:last-of-type {
 
 /* ─── GANTT TOOLTIPS ─── */
 
-.gantt-bar[data-tooltip] {
-  position: relative;
-}
-
 .gantt-bar[data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
