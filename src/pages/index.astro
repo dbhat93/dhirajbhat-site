@@ -8,6 +8,13 @@ import '../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Dhiraj Bhat. Product manager, builder, and fraud nerd." />
+    <meta property="og:title" content="Dhiraj Bhat" />
+    <meta property="og:description" content="Product manager. Builder. Fraud nerd. Seven years at the intersection of financial crime and AI." />
+    <meta property="og:url" content="https://dhirajbhat.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dhiraj Bhat" />
+    <meta name="twitter:description" content="Product manager. Builder. Fraud nerd." />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>Dhiraj Bhat</title>
   </head>
@@ -40,6 +47,14 @@ import '../styles/global.css';
         </p>
       </section>
 
+      <!-- STATS STRIP -->
+      <div class="stats-strip">
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">FIs in the consortium</span></div>
+        <div class="stat"><span class="stat-num">65</span><span class="stat-label">AI agent deployments</span></div>
+        <div class="stat"><span class="stat-num">35-65%</span><span class="stat-label">Handle time reduction</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Patent granted</span></div>
+      </div>
+
       <!-- CAREER -->
       <section class="career-section">
         <p class="section-label">Career</p>
@@ -52,22 +67,26 @@ import '../styles/global.css';
               <div class="gantt-grid">
 
                 <a href="/company/interface/" class="gantt-bar bar-interface"
-                  style="--row:1; left:84.6%; width:15.4%;">
+                  style="--row:1; left:84.6%; width:15.4%;"
+                  data-tooltip="Lead PM, 2025-present">
                   Interface AI
                 </a>
 
                 <a href="/company/unit21/" class="gantt-bar bar-unit21"
-                  style="--row:2; left:48.1%; width:36.5%;">
+                  style="--row:2; left:48.1%; width:36.5%;"
+                  data-tooltip="Senior PM / GM, Fraud and Compliance, 2021-2026">
                   Unit21
                 </a>
 
                 <a href="/company/emergent/" class="gantt-bar bar-emergent"
-                  style="--row:3; left:26.3%; width:21.8%;">
+                  style="--row:3; left:26.3%; width:21.8%;"
+                  data-tooltip="Product Manager, GCoin, 2018-2021">
                   Emergent / Qenta
                 </a>
 
                 <a href="/company/bosch/" class="gantt-bar bar-bosch"
-                  style="--row:4; left:0%; width:19.2%;">
+                  style="--row:4; left:0%; width:19.2%;"
+                  data-tooltip="Software / QA Engineer, 2015-2017">
                   Bosch Rexroth
                 </a>
 

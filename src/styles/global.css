@@ -67,14 +67,14 @@ main {
 }
 
 .hero .current {
-  font-size: 0.875rem;
-  color: var(--muted);
+  font-size: 0.9rem;
+  color: var(--text);
   margin-top: 1.75rem;
 }
 
 .hero .current strong {
   color: var(--text);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ─── SECTION HEADERS ─── */
@@ -284,12 +284,13 @@ section:last-of-type {
 }
 
 .work-item .insight {
-  font-size: 0.85rem;
-  color: var(--muted);
+  font-size: 0.875rem;
+  color: var(--text);
   font-style: italic;
   border-left: 2px solid var(--link-underline);
   padding-left: 0.75rem;
   margin-top: 0.75rem;
+  opacity: 0.85;
 }
 
 /* ─── WRITING ─── */
@@ -510,6 +511,66 @@ section:last-of-type {
   cursor: default;
 }
 
+/* ─── STATS STRIP ─── */
+
+.stats-strip {
+  display: flex;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ─── GANTT TOOLTIPS ─── */
+
+.gantt-bar[data-tooltip] {
+  position: relative;
+}
+
+.gantt-bar[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.7rem;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+.gantt-bar[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
 /* ─── FOOTER ─── */
 
 footer {
@@ -544,8 +605,11 @@ footer {
     font-size: 1.6rem;
   }
 
-  .timeline-header {
-    flex-direction: column;
-    gap: 0.2rem;
+  .stats-strip {
+    gap: 1.5rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
   }
 }

@@ -17,6 +17,13 @@ const { company, role, years, prev, next } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content={`${company} - Dhiraj Bhat`} />
+    <meta property="og:description" content="Product manager. Builder. Fraud nerd. Seven years at the intersection of financial crime and AI." />
+    <meta property="og:url" content="https://dhirajbhat.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${company} - Dhiraj Bhat`} />
+    <meta name="twitter:description" content="Product manager. Builder. Fraud nerd." />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>{company} - Dhiraj Bhat</title>
   </head>
