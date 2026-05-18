@@ -129,8 +129,6 @@ section:last-of-type {
   flex: 1;
   overflow-x: auto;
   overflow-y: visible;
-  -webkit-mask-image: linear-gradient(to right, black 88%, transparent 100%);
-  mask-image: linear-gradient(to right, black 88%, transparent 100%);
 }
 
 .gantt-inner {
@@ -613,5 +611,10 @@ footer {
 
   .stat-num {
     font-size: 1.5rem;
+  }
+
+  .gantt-scroll {
+    -webkit-mask-image: linear-gradient(to right, black 82%, transparent 100%);
+    mask-image: linear-gradient(to right, black 82%, transparent 100%);
   }
 }
