@@ -330,6 +330,30 @@ section:last-of-type {
   gap: 1.25rem;
 }
 
+.type-chip {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  vertical-align: 1px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.chip-essay { color: #5B7B6F; border-color: #5B7B6F; }
+.chip-oped  { color: #C4622D; border-color: #C4622D; }
+.chip-talk  { color: #7D6048; border-color: #7D6048; }
+
+.writing-title-static {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
 .writing-item a {
   font-size: 0.95rem;
   font-weight: 600;
