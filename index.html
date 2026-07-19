@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Dhiraj Bhat. Product manager, builder, and fraud nerd."><meta property="og:title" content="Dhiraj Bhat"><meta property="og:description" content="Product manager. Builder. Fraud nerd. Seven years at the intersection of financial crime and AI."><meta property="og:url" content="https://dhirajbhat.com"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Dhiraj Bhat"><meta name="twitter:description" content="Product manager. Builder. Fraud nerd."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Dhiraj Bhat</title><link rel="stylesheet" href="/_astro/global.4vDmZ0-g.css"></head> <body> <main> <!-- HERO --> <section class="hero"> <h1>Dhiraj Bhat</h1> <p class="tagline">Product manager. Builder. Fraud nerd.</p> <p>
+Seven years building products at the intersection of financial crime and AI.
+          I've helped 100+ financial institutions share fraud intelligence without sharing a
+          single piece of customer PII, shipped AI into audited investigation workflows, and
+          argued in front of FinCEN about what "too many alerts" actually means.
+          (The answer depends on whether you're in fraud or AML. The full answer took twenty minutes.)
+</p> <p>
+I also co-invented a patent for privacy-preserving fraud network architecture,
+          vibe-coded a fraud simulation browser that unlocked ~$150K in partner ARR,
+          and built a job search coach to coach myself through interviews.
+          It worked. Alas, not novel.
+</p> <p class="current">
+Currently: <strong>Lead PM at Interface AI</strong>.
+          Previously: Senior PM / GM at Unit21.
+</p> </section> <!-- STATS STRIP --> <div class="stats-strip"> <div class="stat"><span class="stat-num">100+</span><span class="stat-label">FIs in the consortium</span></div> <div class="stat"><span class="stat-num">65</span><span class="stat-label">AI agent deployments</span></div> <div class="stat"><span class="stat-num">35-65%</span><span class="stat-label">Handle time reduction</span></div> <div class="stat"><span class="stat-num">1</span><span class="stat-label">Patent granted</span></div> </div> <!-- CAREER --> <section class="career-section"> <p class="section-label">Career</p> <div class="gantt-outer"> <div class="gantt-y-label">Scope &amp; Responsibilities</div> <div class="gantt-scroll"> <div class="gantt-inner"> <div class="gantt-grid"> <a href="/company/interface/" class="gantt-bar bar-interface" style="--row:1; left:84.6%; width:15.4%;" data-tooltip="Lead PM, 2025-present">
+Interface AI
+</a> <a href="/company/unit21/" class="gantt-bar bar-unit21" style="--row:2; left:48.1%; width:36.5%;" data-tooltip="Senior PM / GM, Fraud and Compliance, 2021-2026">
+Unit21
+</a> <a href="/company/emergent/" class="gantt-bar bar-emergent" style="--row:3; left:26.3%; width:21.8%;" data-tooltip="Product Manager, GCoin, 2018-2021">
+Emergent / Qenta
+</a> <a href="/company/bosch/" class="gantt-bar bar-bosch" style="--row:4; left:0%; width:19.2%;" data-tooltip="Software / QA Engineer, 2015-2017">
+Bosch Rexroth
+</a> </div> <div class="gantt-years"> <div>2015</div><div>2016</div><div>2017</div><div>2018</div> <div>2019</div><div>2020</div><div>2021</div><div>2022</div> <div>2023</div><div>2024</div><div>2025</div><div>2026</div> <div>2027</div> </div> </div> </div> </div> </section> <!-- SELECTED WORK --> <section> <p class="section-label">Selected Work</p> <div class="work-grid"> <div class="work-item"> <h3>The Right Product Battle to Lose</h3> <p>
+In 2022 I argued to save Unit21's identity verification product. It was bleeding
+              support tickets from upstream vendor outages, sales was avoiding it for margin reasons,
+              and the engineering lead wanted a full backend rebuild. I had the retention data,
+              a PLG motion sketched out, and a strategic argument: you can't be downstream in fraud
+              without owning the onboarding journey. I lost. Leadership killed IDV on the economics.
+</p> <p>
+About a year later, Unit21 launched sanctions screening. Customers immediately asked:
+              "Why don't you also do verification? Those two go together."
+              The market validated the thesis I had documented.
+              The company had already given up the position.
+</p> <p class="insight">
+Startups optimize for margin when they should optimize for surface area.
+              Losing well means documenting your reasoning so when the market comes back around,
+              you can move fast instead of re-litigating the debate.
+</p> </div> <div class="work-item"> <h3>9 to 100: The Fraud Network Cold Start</h3> <p>
+Two years into building the Unit21 Fraud Consortium, usage hit a wall.
+              Members spiked at onboarding then went quiet. The contribution model required
+              confirmed fraud labels, meaning members had to complete a full investigation
+              before feeding any signal back. For AML-heavy teams whose workflow ends at filing a SAR,
+              that was asking them to do more work for a network not yet generating enough return to justify it.
+              Classic cold-start trap.
+</p> <p>
+I made two counterintuitive calls: accept True Positive alerts instead of confirmed fraud
+              (a deliberate precision-for-recall tradeoff at the contribution layer), and make the data
+              configurable rather than delivering a verdict. True positive alert counts went from
+              9 to over 100 in 2.5 months.
+</p> <p class="insight">
+In a shared network, adoption is the product at early stages.
+              Signal quality is a second-order problem. If you demand high-quality contributions
+              from customers who aren't operationally ready to provide them,
+              you kill the network before it ever gets to quality.
+</p> </div> <div class="work-item"> <h3>Shipping AI Into Regulated Fraud Workflows</h3> <p>
+The surface concern when Unit21 deployed AI agents to fraud investigation was
+              "it'll take our jobs." The real concerns were auditability, legal exposure,
+              and explaining AI decisions to regulators. I solved it in two places most PMs wouldn't touch:
+              at the architecture layer (chose AWS Bedrock over direct API calls to eliminate
+              the Data Processing Agreement requirement that would have killed the pilot),
+              and at the agreement layer (reworked the consortium contract structure with our GC,
+              from 60 pages to 4 with equivalent protection).
+</p> <p>
+65 customers. 35-65% handle time reduction. Zero exits for legal, audit, or product reasons.
+</p> <p class="insight">
+Legal friction is a product design problem, not a legal department problem.
+              The fix is almost always upstream of where most PMs would touch it.
+</p> </div> <div class="work-item"> <h3>Why Banks Can't Leave Bad Software</h3> <p>
+Unit21 was losing deals to Verafin, the dominant fraud/AML incumbent for FIs.
+              The sales team's theory: Verafin won on product features. Through direct discovery
+              with FI compliance teams, I learned the real dynamics. Verafin won because auditors
+              trusted it and because core banking providers (Jack Henry, FIS, Fiserv) actually run
+              the relationship. Banks are terrified of their own core.
+              Asking for file access triggers a ticket queue measured in months.
+</p> <p>
+Then NASDAQ acquired Verafin and raised pricing 2-3x. That was the crack.
+              I used it to reshape Unit21's FI go-to-market: stop trying to route through core banking,
+              route around it through digital banking platforms instead.
+              One integration, dozens of FIs. That became Unit21's primary FI motion.
+</p> <p class="insight">
+The vendor you think you're competing with isn't winning on product.
+              They're winning on audit friction and twenty-year incumbency.
+              You don't beat that head-on. You route around it.
+</p> </div> </div> </section> <!-- FROM CUSTOMERS --> <section> <p class="section-label">From customers</p> <div class="quotes-list"> <figure class="quote-item"> <blockquote>
+You have been a great partner, an insightful leader, and honestly a great/fun person to engage with over the past few years.
+</blockquote> <figcaption>Financial institution partner</figcaption> </figure> <figure class="quote-item"> <blockquote>
+Thanks for all your help in getting us to a real time integration with Alkami. It will be a game changer once it is in place.
+</blockquote> <figcaption>Fraud operations lead, community bank</figcaption> </figure> </div> </section> <!-- WRITING & TALKS --> <section> <p class="section-label">Writing &amp; Talks</p> <ul class="writing-list"> <li class="writing-item"> <span class="type-chip chip-essay">essay</span> <a href="https://dhirajbhat.medium.com/i-built-a-job-search-coach-with-claude-code-no-engineers-were-harmed-f8ac17d41ddc" target="_blank" rel="noopener">
+I built a job search coach with Claude Code. No engineers were harmed.
+</a> <span class="writing-meta">Medium &middot; 7 min read</span> </li> <li class="writing-item"> <span class="type-chip chip-oped">op-ed</span> <a href="https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2025/03/04/agents-wont-be-your-moat/" target="_blank" rel="noopener">
+Agents Won't Be Your Moat
+</a> <span class="writing-meta">Forbes, Mar 2025 &middot; 5 min read</span> </li> <li class="writing-item"> <span class="type-chip chip-oped">op-ed</span> <a href="https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2024/12/19/you-dont-need-to-be-novel-you-just-need-to-be-innovative/" target="_blank" rel="noopener">
+You Don't Need To Be Novel, You Just Need To Be Innovative
+</a> <span class="writing-meta">Forbes, Dec 2024 &middot; 5 min read</span> </li> <li class="writing-item"> <span class="type-chip chip-talk">talk</span> <span class="writing-title-static">What "Too Many Alerts" Actually Means: Fraud vs AML Alert Economics</span> <span class="writing-meta">Presented to FinCEN as Unit21's sole representative &middot; also presented to the Federal Reserve and California DFPI</span> </li> </ul> </section> <!-- RECOGNITION --> <section> <p class="section-label">Recognition</p> <ul class="recognition-list"> <li class="recognition-item"> <span class="rec-title">Gold Globee Award 2025: Product Management Professional of the Year</span> <span class="rec-org">Driving Industry Transformation through the Unit21 Fraud Consortium</span> </li> <li class="recognition-item"> <span class="rec-title">2nd Annual Product Leader Award</span> <span class="rec-org">Products That Count</span> </li> <li class="recognition-item"> <a href="https://patents.google.com/patent/US12118125B1/en?oq=12118125" class="rec-title inline-link" target="_blank" rel="noopener">Patent US12118125B1: Method of Consortium Hashing</a> <span class="rec-org">Co-inventor. Granted October 2024. Privacy-preserving cross-institution fraud network linkage.</span> </li> </ul> </section> </main> <footer> <div class="footer-links"> <a href="https://www.linkedin.com/in/dhiraj-bhat" target="_blank" rel="noopener">LinkedIn</a> <a href="https://github.com/dbhat93" target="_blank" rel="noopener">GitHub</a> <a href="https://dhirajbhat.medium.com" target="_blank" rel="noopener">Medium</a> <a href="mailto:dhirajbhat93@gmail.com">Email</a> </div> </footer> </body></html>
